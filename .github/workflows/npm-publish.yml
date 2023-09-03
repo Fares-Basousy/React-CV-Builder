@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Build package (if necessary)
-        run: npm build # Modify this if your project requires a build step
+        run: npm run dev # Modify this if your project requires a build step
 
       - name: Publish to npm
         run: npm publish
