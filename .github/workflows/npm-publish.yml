@@ -1,0 +1,32 @@
+name: Publish to npm
+
+on:
+  # Trigger the workflow when a new commit is pushed to the main branch.
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14' # You can specify the Node.js version you need
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build package (if necessary)
+        run: npm build # Modify this if your project requires a build step
+
+      - name: Publish to npm
+        run: npm publish
+
+      - name: Clean up
+        run: npm ci # Clean up the node_modules and install dependencies again with a clean slate
