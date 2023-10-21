@@ -46,7 +46,7 @@ function Info({onChange}) {
     onChange(infoData)
   };
     return <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
-    <h3 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl  text-center '>Personal Indivation</h3>
+    <h3 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl  text-center '>Personal Information</h3>
     <img className= {"float-right w-32 h-32 p-1 rounded-full ring-2 ring-gray-300  ml-auto " + display} src={imgData} />
     <br />
     <br />
