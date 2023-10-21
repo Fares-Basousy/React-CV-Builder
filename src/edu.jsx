@@ -28,7 +28,7 @@ function Edu({id, onChange}) {
    }
   
     return   <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
-    <h3 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center' >Education</h3>
+    <h3 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl text-center' >Education</h3>
     <br />
     <label  className='block mb-2 font-bold text-gray-600'>School Name:&nbsp;&nbsp;      
     <input required readOnly={edit} className='border border-gray-300 shadow p-3 w-full rounded mb' type="text" placeholder="Universty of blah blah" name = "school" value={eduData.school} onChange = {handleEdu} />
