@@ -25,9 +25,8 @@ function Work({id,onChange}) {
       }))
         edit?null:onChange(workData)
    }
-   
     return  <div className="shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
-            <h3 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center ">We invest in the world’s potential'>Work Experience</h3>
+            <h3 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl  text-center'>Work Experience</h3>
 
         <br />
     <label className='block mb-2 font-bold text-gray-600'>Company Name:<br />
